@@ -9,5 +9,9 @@ CORS(app)
 def default():
     return "Server is online..."
 
+@app.route('/hello/', methods=['GET', 'POST'])
+def welcome():
+    return os.API_KEY
+
 if __name__ == '__main__':
     app.run()
