@@ -11,7 +11,7 @@ def default():
 
 @app.route('/hello/', methods=['GET', 'POST'])
 def welcome():
-    return os.API_KEY
+    return os.APi_KEY
 
 if __name__ == '__main__':
     app.run()
