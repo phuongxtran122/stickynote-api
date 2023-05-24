@@ -8,3 +8,6 @@ CORS(app)
 @app.route("/")
 def default():
     return "Server is online..."
+
+if __name__ == '__main__':
+    app.run()
