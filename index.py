@@ -5,13 +5,11 @@ import check
 
 app = Flask(__name__)
 CORS(app)
-number = 0
+
 @app.route("/")
 def default():
-    global number
-    number+=1
     response = {
-        'userID':number
+        'userID':3
     }
     return jsonify(response)
 
