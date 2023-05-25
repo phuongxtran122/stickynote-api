@@ -8,10 +8,8 @@ CORS(app)
 
 @app.route("/")
 def default():
-    response = {
-        'userID':3
-    }
-    return jsonify(response)
+    
+    return "hi"
 
 @app.route('/hello/', methods=['GET', 'POST'])
 def welcome():
